@@ -1,0 +1,288 @@
+/*** PRESENTATION ***/
+#presentation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+}
+#presentation img {
+    width: 350px;
+}
+.presentation {
+    display: flex;
+    flex-direction: column;
+    margin: 150px 0;
+    gap: 20px;
+}
+.presentation p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.presentation button {
+    margin-right: 35px;
+}
+h1 span {
+    color: var(--rouge-cerise);
+}
+/******/
+
+
+/*** BANNIERE ***/
+.banniere {
+    padding: 100px;
+    text-align: center;
+    font-size:20px;
+    font-weight: 600;
+    background-color: var(--bleu);
+}
+.banniere p {
+    font-size: 23px;
+    font-weight: 600;
+    color: white;
+    line-height: 1.7em;
+}
+/******/
+
+
+/*** SERVICES ***/
+#services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 70px 0;
+    transition: 0.5s;
+}
+#services img {
+    transition: 0.5s;
+}
+#services img:hover {
+    transform: scale(1.03);
+}
+.identite img {
+    width: 150px;
+}
+.site img,
+.contenue-marque img {
+    width: 200px;
+}
+.services {
+    background-color: #F8EAE9;
+    padding: 100px 50px;
+    text-align: center;
+}
+.services p {
+    font-size: 16px;
+}
+.services h3 {
+    font-weight: 600;
+    color: #bf3333;
+}
+.identite,
+.site,
+.contenue-marque {
+    margin: 0 40px;
+    width: 33.33%;
+}
+/******/
+
+
+/*** REALISATIONS ***/
+.carousel {
+    text-align: center;
+    margin: 100px 0;
+}
+#container-realisations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px 20px;
+}
+#container-realisations img {
+    width: 350px;
+    height: 350px;
+    margin-right: 35px; 
+    margin-bottom: 35px;
+    border-radius: 20px;
+    transition: 0.7s;
+}
+#container-realisations img:hover {
+    transform: scale(1.01);
+}
+/******/
+
+
+/*** QUI SUIS JE ***/
+#qui-je-suis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    background-color: var(--beige-rose);
+}
+#qui-je-suis img {
+    width: 350px;
+    margin-right: 20px;
+}
+.text {
+    border-radius: 50px;
+    margin: 0 0 0 50px;
+}
+.text h2 {
+    margin: 0px 0px 0px 50px;
+}
+.text p{
+    background-color: var(--framboise);
+    border-radius: 50px;
+    margin-bottom: 50px;
+    padding: 50px; 
+    font-size: 18px;
+}
+.text a {
+    margin-left: 50px;
+}
+.espace {
+    margin-left: 20px;
+}
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+/******/
+
+
+/*** CONTACT ***/
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 100px 50px;
+    background-color: var(--framboise);
+}
+#contact h2 {
+    font-size: 25px;
+}
+/******/
+
+
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+    #presentation .btn-beige {
+        margin-bottom: 30px;
+    }
+    #qui-je-suis {
+        padding: 100px 50px;
+    }
+    #qui-je-suis img {
+        width: 40%;
+    }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /*** PRESENTATION ***/
+    h1 {
+        font-size: 25px;
+        margin: 0;
+    }
+    h2 {
+        font-size: 21px;
+        text-align: center;
+    }
+    #presentation {
+        margin: 80px 50px;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    #presentation img {
+        width: 200px;
+        padding: 0;
+        margin-top: 20px;
+    }
+    #presentation p {
+        margin-bottom: 40px;
+    }
+    .presentation {
+        margin: 0;
+    }
+
+
+    /*** BANNIERE ***/
+    .banniere {
+        padding: 100px 50px;
+    }
+    .banniere p {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    /*** SERVICES ***/
+    .services h3 {
+        font-size: 15px;
+    }
+    #services {
+        display:inline-block;
+        margin: 50px 0;
+    }
+    #services img {
+        width: 100px;
+    }
+    .identite,
+    .site,
+    .contenue-marque {
+        width: 100%;
+        margin: 5px 5px 50px 5px;
+    }
+
+
+    /*** REALISATION ***/
+    .carousel {
+        padding: 0 35px;
+    }
+    #realisations img {
+        width: 285px;
+        height: 285px;
+        padding: 0;
+        margin: 0 20px 30px 20px;
+    }
+
+
+    /*** QUI SUIS JE ***/
+    #qui-je-suis img {
+        width: 250px;
+        margin-bottom: 50px;
+    }
+    #qui-je-suis {
+        gap: 50px;
+        padding: 100px 50px;
+    }
+    .text {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .text a {
+        margin: 0;
+    }
+    .text h2 {
+        padding: 0;
+        margin: 0 0 20px 0;
+    }
+    .flex-container {
+        margin: 0;
+        flex-direction: column;
+    }
+    
+
+    /*** CONTACT ***/
+    #contact {
+        padding: 100px 25px;
+    }
+    #contact h2 {
+        font-size: 20px;
+    }
+}
